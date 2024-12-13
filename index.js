@@ -40,7 +40,7 @@ bot.setMyCommands([
 const getCategories = (chatId) => {
     const inline_keyboard = [];
 
-    if (Object.keys(DEFAULT_CATEGORY).length === currentChat[chatId].length) {
+    if (Object.keys(DEFAULT_CATEGORY).length === currentChat[chatId]?.categories.length) {
         return null
     }
 
